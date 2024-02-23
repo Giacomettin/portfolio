@@ -1,74 +1,358 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <nav>
-        <div class="navbar containerN">
-            <ul>
-                <li><a href="#start">START</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#work">WORK</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="https://github.com/Giacomettin" target="_blank"><img src="git2.png"  ></a></li>
-                <li><a href="https://www.linkedin.com/in/lucas-giacomett-nunes-88341661" target="_blank"><img src="lkd2.png" ></a></li>
-                <li><a href="#"><img src="icone_servicos.png" ></a></li>
-                <li><a href="#"><img src="icone_contato.png" ></a></li>
-            </ul>
-        </div>
-    </nav>
-<section id="start">
-    <div class="containerS image-container">
-        <img src="img3.png" class="img-fluid" alt="..." class="bottom-image">
-        <p class="text-overlay">Hello, I'm Lucas<br>Student dev based in Toronto</p>
-    </div>
-</section>
-<section id="about">
-    <div class="containerS">
-        <img src="img2.png" class="img-fluid" alt="...">
-    </div>
-</section>
-<section id="work">
-    <div class="containerS  image-container">
-        <img src="img3.png" class="img-fluid " alt="..." class="bottom-image">
-        <div class="text-overlay textbox">
-            <div class="quadro">
-                <img src="w1.PNG" alt="Foto 3">
-                <p class="title">Webpage - Cakes</p><br>
-                <p class ="descr">HTML <br>CSS<br>JS<br>PHP<br>MySQL</p><br>
-                <!--<div class="progress-bar" > 60%</div>-->
-            </div>
-            <div class="quadro">
-                <img src="Arduino.png" alt="Foto 3">
-                <p class="title">Music games</p><br>
-                <p class ="descr">C++<br>Circuits<br>Display</p><br>
-                <!--<div class="progress-bar"></div>-->
-            </div>
-            <div class="quadro">
-                <img src="foto3.jpg" alt="Foto 3">
-                <p>Texto no Quadro 3</p>
-                <!--<div class="progress-bar"></div>-->
-            </div>
-            <div class="quadro">
-                <img src="foto3.jpg" alt="Foto 3">
-                <p>Texto no Quadro 3</p>
-                <!--<div class="progress-bar"></div>-->
-            </div>
-            <div class="quadro">
-                <img src="foto3.jpg" alt="Foto 3">
-                <p>Texto no Quadro 3</p>
-                <!--<div class="progress-bar"></div>-->
-            </div>
-        </div>
-    </div>
-</section>
-<section id="contact">
-    <div class="containerS image-container">
-        <img src="img2.png" class="img-fluid" alt="..." class="bottom-image">
-        <a class="text-overlay" href="Mini.pdf" download="Mini.pdf" target="_blank">Baixar Arquivo</a>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <title>Lucas Giacomett | Developer</title>
+  <meta name="description"
+    content="A Programming student with hands-on experience in various projects, specializing in Frontend development for websites and web applications. Committed to crafting intuitive and visually appealing user interfaces that contribute to the overall success of the product." />
+  <meta name="author" content="Lucas Giacomett Nunes" />
+  
+
+  <meta property="og:title" content="Lucas Giacomett | Developer" />
+  <meta property="og:site_name" content="Lucas Giacomett Portfolio Website" />
+  <meta property="og:url" content="https://www.dev-lucas.ca/" />
+  <meta property="og:description"
+    content="A Programming student with hands-on experience in various projects, specializing in Frontend development for websites and web applications. Committed to crafting intuitive and visually appealing user interfaces that contribute to the overall success of the product." />
+  <meta property="og:type" content="website" />
+
+  <link href='styles2.css' rel='stylesheet'/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD9ESD1D9K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+
+    gtag('config', 'G-QD9ESD1D9K')
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <div class="header__logo-img-cont">
+          <img src="profile-pic.png" alt="Lucas Giacomett Logo Image"
+            class="header__logo-img" />
+        </div>
+        <span class="header__logo-sub">Lucas Giacomett</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="#start" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="#projects" class="header__link"> Projects </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="#contact" class="header__link"> Contact </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="https://d33wubrfki0l68.cloudfront.net/79e75114856ae61628d2ad26504e3ff4ab2c71b6/f06a4/assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="https://d33wubrfki0l68.cloudfront.net/de2a681c8ca1630b29949b3a34bf158a686a0554/6a0ec/assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
     </div>
-</section>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="#contact"> Contact </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="home-hero" id="start">
+    <div class="home-hero__content">
+      <h1 class="heading-primary">Hey, I'm Lucas Giacomett</h1>
+      <div class="home-hero__info">
+        <p class="text-primary">
+          I am ready to bring a versatile skill set and dedication to any team or project, 
+          with the aim of positively impacting the overall success of 
+          products through comprehensive development contributions.
+        </p>
+      </div>
+      <div class="home-hero__cta">
+        <a href="#projects" class="btn btn--bg">Projects</a>
+      </div>
+    </div>
+    <div class="home-hero__socials">
+      <div class="home-hero__social">
+        <a href="https://www.linkedin.com/in/lucas-giacomett-nunes-88341661/" class="home-hero__social-icon-link" rel="noreferrer"
+          target="_blank">
+          <img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg" alt="Lucas Giacomett Linkedin Profile"
+            class="home-hero__social-icon" />
+        </a>
+      </div>
+      <div class="home-hero__social">
+        <a href="https://twitter.com/Giacomett_Lucas" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+          <img src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg" alt="Lucas Giacomett Twitter Profile" class="home-hero__social-icon" />
+        </a>
+      </div>
+      
+      <div class="home-hero__social">
+        <a href="https://github.com/Giacomettin" class="home-hero__social-icon-link" rel="noreferrer" target="_blank">
+          <img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg" alt="Lucas Giacomett Github Profile" class="home-hero__social-icon" />
+        </a>
+      </div>
+    </div>
+    <div class="home-hero__mouse-scroll-cont">
+      <div class="mouse"></div>
+    </div>
+  </section>
+  <section id="about" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">About Me</span>
+        <span class="heading-sec__sub">
+          As a student based in Toronto, Canada, I am actively seeking entry-level positions in the realm of programming. 
+          My experience primarily revolves around hands-on projects and coursework completed during my time in college, 
+          encompassing both frontend and backend development. Eager to apply the theoretical knowledge gained in a practical setting,
+           I am enthusiastic about contributing to a dynamic work environment and furthering my skills in both frontend and backend technologies. 
+           Open to new learning opportunities, I am ready to bring a versatile skill set and dedication to any team or project, 
+           with the aim of positively impacting the overall success of products through comprehensive development contributions.
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+          <h3 class="about__content-title">Get to know me!</h3>
+          <div class="about__content-details">
+            <p class="about__content-details-para">
+              I'm a <strong> Developer</strong> building the
+              Front-end of Websites and Web Applications that leads to the
+              success of the overall product. Check out some of my work in the
+              <strong>Projects</strong> section.
+            </p>
+            <p class="about__content-details-para">
+              I enjoy sharing insights and knowledge accumulated through years of hands-on experience in Web Development. 
+              My focus lies in crafting web applications, and I take pleasure in disseminating valuable content to the Dev Community. 
+              Connect with me or follow my journey on <a rel="noreferrer" href="https://www.linkedin.com/in/lucas-giacomett-nunes-88341661/" target="_blank">LinkedIn</a>, 
+              where I regularly share practical insights and useful content related to Web Development and Programming.
+            </p>
+            <p class="about__content-details-para">
+              I'm open to <strong>Job</strong> opportunities where I can
+              contribute, learn and grow. If you have a good opportunity that
+              matches my skills and experience then don't hesitate to
+              <strong>contact</strong> me.
+            </p>
+          </div>
+          <a href="#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">My Skills</h3>
+          <div class="skills">
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">Node.JS</div>
+            <div class="skills__skill">React</div>
+            <div class="skills__skill">GIT</div>
+            <div class="skills__skill">Github</div>
+            <div class="skills__skill">Responsive Design</div>
+            <div class="skills__skill">Terminal</div>
+            <div class="skills__skill">Express Basics</div>
+            <div class="skills__skill">MySQL</div>
+            <div class="skills__skill">MongoDB</div>
+            <div class="skills__skill">Java</div>
+            <div class="skills__skill">C#</div>
+            <div class="skills__skill">C++</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-bg">
+        <span class="heading-sec__main">Projects</span>
+        <span class="heading-sec__sub">
+          Here you will find some of the personal and clients projects that I
+          created with each project containing its own case study
+        </span>
+      </h2>
+
+      <div class="projects__content">
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Dopefolio</h3>
+            <p class="projects__row-content-desc">
+              Dopefolio is a successful Open-Source project that I created which have been featured on
+              some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally
+            </p>
+            <a class='btn btn--med btn--theme dynamicBgClr' href='/project-1' target='_blank'>Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="https://d33wubrfki0l68.cloudfront.net/9199afe42f789dbddb324ed3edd326e080e693c1/28f54/assets/jpeg/wilsonport.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Wilsonport</h3>
+            <p class="projects__row-content-desc">
+              Wilsonport is a multiservice logistics and transport company and
+              I created their website from scratch using the frontend tools I
+              know.
+            </p>
+            <a class='btn btn--med btn--theme dynamicBgClr' href='/project-2' target='_blank'>Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="https://d33wubrfki0l68.cloudfront.net/61fc288f39a306e3130c72643480ce015dec48ae/e3272/assets/jpeg/boreal-coffee-clone.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Boreal Coffee Clone</h3>
+            <p class="projects__row-content-desc">
+              I re-created the frontend of Boreal Coffee's official web app
+              because I got attracted to their beautiful UI. It was a great
+              experience for me to build the entire frontend.
+            </p>
+            <a class='btn btn--med btn--theme dynamicBgClr' href='/project-3' target='_blank'>Case Study</a>
+          </div>
+        </div>
+        <div class="projects__row">
+          <div class="projects__row-img-cont">
+            <img src="https://d33wubrfki0l68.cloudfront.net/74f6186aaa2b6d5f6ea6da1013abfeb672f5c807/aee81/assets/jpeg/crown-template.jpeg" alt="Software Screenshot" class="projects__row-img"
+              loading="lazy" />
+          </div>
+          <div class="projects__row-content">
+            <h3 class="projects__row-content-title">Crown Template</h3>
+            <p class="projects__row-content-desc">
+              Crown is a web template that I created targeting the restaurant
+              and food industry which anyone can use to present their business
+              online.
+            </p>
+            <a class='btn btn--med btn--theme dynamicBgClr' href='/project-4' target='_blank'>Case Study</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact sec-pad dynamicBg">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+        <span class="heading-sec__sub heading-sec__sub--lt">
+          Feel free to Contact me by submitting the form below and I will get
+          back to you as soon as possible. 
+        </span>
+      </h2>
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="btn btn--theme contact__btn2">
+          <a  href="Mini.pdf" download="Mini.pdf" target="_blank">Download my Resume </a>
+        </span>
+      </h2>
+      <div class="contact__form-container">
+        <form action='#' class='contact__form' method='post'><input type='hidden' name='form-name' value='form 1' />
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="name">Name</label>
+            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
+              id="name" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="email">Email</label>
+            <input required placeholder="Enter Your Email" type="email" class="contact__form-input" name="email"
+              id="email" />
+          </div>
+          <div class="contact__form-field">
+            <label class="contact__form-label" for="message">Message</label>
+            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
+              name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn--theme contact__btn">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/rammcodes">
+              <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+                alt="Ram Maheshwari Linkedin Profile" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/rammcodes">
+              <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png" alt="RammCodes Github Profile" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/rammcodes">
+              <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/ef67339f7016cb09ba66366c1dc9145ac69f2a21/feca1/assets/png/twitter-ico.png" alt="RammCodes Twitter Profile" />
+            </a>
+
+            <a target="_blank" rel="noreferrer" href="https://dev.to/rammcodes">
+              <img class="main-footer__icon" src="https://d33wubrfki0l68.cloudfront.net/c7b1e51b8c75a239d68af3d42866666580f390ec/dcc7c/assets/png/blog-ico.png" alt="RammCodes DEV.to Blog Profile" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCIb8_J9lqtiWGMIOdQ5DVsg">
+              <img class="main-footer__icon main-footer__icon--mr-none" src="https://d33wubrfki0l68.cloudfront.net/493f1aa6da674c05bc606ba5b9e8092b881e8626/67c76/assets/png/yt-ico.png"
+                alt="RammCodes Youtube Channel" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h2 class="heading heading-sm text-lt">Ram Maheshwari</h2>
+          <p class="main-footer__short-desc">
+            A Frontend focused Web Developer building the Frontend of Websites
+            and Web Applications that leads to the success of the overall
+            product
+          </p>
+        </div>
+      </div>
+
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright
+        <script>document.write(new Date().getFullYear())</script>. Made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src='index.js'></script>
+  <script src="render.ee85351c3ff9bce37bb2.js" async></script>
 </body>
+
 </html>
